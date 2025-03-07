@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import {ThemeProvider} from "@/context/Theme/theme";
+import Navbar from "@/components/navigationbar/Navbar";
 import Background from "@/components/background/background";
 
 export default function Layout({ children } :{
@@ -10,6 +11,7 @@ export default function Layout({ children } :{
         <html>
             <body>
                 <ThemeProvider>
+                    <Navbar />
                     <Background/>
                         <div>
                             {children}
